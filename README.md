@@ -1,4 +1,4 @@
-#打个借条开发文档
+#打个借条iOS开发文档
 
 ##一、文件夹
 
@@ -47,14 +47,14 @@ plist、entitlements文件夹<br>
 尽量避免拼音形式的命名，并按照模块和功能、类型命名,现项目中多使用驼峰命名
 ###1、常量命名：
 ####宏定义
-#####作用域+功能
-<pre><code>#define DJTableView_HeaderHeight 12                      //通用Header高度
+#####命名规则：作用域+功能
+<pre><code>#define DJTableView_HeaderHeight 12                          //通用Header高度
 </code></pre>
 ####类型常量
-#####处于编译单元内使用的常量 k+作用域+功能
-<pre><code>static const CGFloat kTableViewHeaderHeight              //Header高度
+#####处于编译单元内使用的常量。<br>命名规则：k+作用域+功能
+<pre><code>static const CGFloat kTableViewHeaderHeight                  //Header高度
 </code></pre>
-#####可外部使用的常量 所属模块+作用域+功能
+#####可外部使用的常量。<br>命名规则：所属模块+作用域+功能
 <pre><code>HJLoginViewController.h
     extern const CGFloat HJLoginViewControllerTableViewHeaderHeight //Header高度
 </code></pre>
@@ -62,14 +62,26 @@ plist、entitlements文件夹<br>
     const CGFloat HJLoginViewControllerTableViewHeaderHeight        //Header高度
 </code></pre>
 ###2、枚举
-定义typedef NS_ENUM 或 typedef NS_OPTIONS宏。服务端数据做映射匹配，或者特殊（字符串比对）匹配。
+####定义typedef NS_ENUM 或 typedef NS_OPTIONS宏。服务端数据做映射匹配，或者特殊（字符串比对）匹配。<br>命名规则：所属模块+作用域+类型（一般类型为Identify、Type、或Style等）
 <pre><code>typedef NS_ENUM(NSInteger, UITableViewStyle) {
     UITableViewStylePlain,
     UITableViewStyleGrouped,
 };
 </code></pre>
 ###3、变量
-驼峰命名，功能+类型 EXAMPLE:@property (nonatomic, strong) NSString *titleLabel;  //标题UILabel控件
-###4、方法名
-驼峰命名，
+####多使用驼峰命名。<br>命名规则：功能+类型
+<pre><code>@property (nonatomic, strong) NSString *titleLabel;          //标题UILabel控件
+</code></pre>
+####变量常用前缀后缀<br>
 
+* isXXX         BOOL
+
+* XXXCount      NSInteger
+
+* XXXWidth      CGFloat
+
+###4、方法名
+####多使用驼峰命名，每个需要参数的方法在参数前需要添加参数的名称提示。<br>命名规则：功能+作用域（+参数）
+<pre><code>- (BOOL)setUserDefaultObject:(id)object key:(NSString *)key;
+</code></pre>
+####一般在定义方法时，需要明确方法的作用，设置（set）、获取（get）、判断（is）以及其他功能模块的回调等，再进行命名。
