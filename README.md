@@ -12,14 +12,12 @@
 扩展，按照所属Object命名文件夹统一存放。
 
 * Components<br>
-模块组件，所有页面均存放在此处，按照功能命名文件夹统一存放。(风格尽量统一)
-<pre><code>
-&nbsp;Cell&View      存放Cell、View
-&nbsp;Controller     存放Controller
-&nbsp;Model          存放模型
-&nbsp;Request        存放请求
-&nbsp;Reform         存放解析
-</code></pre>
+模块组件，所有页面均存放在此处，按照功能命名文件夹统一存放。(风格尽量统一)<br>
+    Cell&View      存放Cell、View
+    Controller     存放Controller
+    Model          存放模型
+    Request        存放请求
+    Reform         存放解析
 
 * Foundation<br>
 底层组件(谨慎修改)<br>
