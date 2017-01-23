@@ -13,12 +13,11 @@
 
 * Components<br>
 模块组件，所有页面均存放在此处，按照功能命名文件夹统一存放。(风格尽量统一)<br>
-<pre><code>
-    Cell&View      存放Cell、View
-    Controller     存放Controller
-    Model          存放模型
-    Request        存放请求
-    Reform         存放解析
+<pre><code>Cell&View      存放Cell、View
+Controller     存放Controller
+Model          存放模型
+Request        存放请求
+Reform         存放解析
 </code></pre>
 
 * Foundation<br>
