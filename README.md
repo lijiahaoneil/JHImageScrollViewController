@@ -2,44 +2,44 @@
 
 ##一、文件夹
 
-* Appdelegate
+* Appdelegate<br>
 存放Appdelegate文件，禁止添加其他文件。
 
-* Base.Iproj
+* Base.Iproj<br>
 存放系统storyboard，禁止添加其他文件。所有页面由代码生成，不使用storyboard开发。
 
-* Category
+* Category<br>
 扩展，按照所属Object命名文件夹统一存放。
 
-* Components
+* Components<br>
 模块组件，所有页面均存放在此处，按照功能命名文件夹统一存放。(风格尽量统一)
-<pre>EXAMPLE:登录模块 <code>
-    -Cell&View      存放Cell、View
-    -Controller     存放Controller
-    -Model          存放模型
-    -Request        存放请求
-    -Reform         存放解析
+<pre><code>
+&nbsp;-Cell&View      存放Cell、View
+&nbsp;-Controller     存放Controller
+&nbsp;-Model          存放模型
+&nbsp;-Request        存放请求
+&nbsp;-Reform         存放解析
 </code></pre>
 
-* Foundation
+* Foundation<br>
 底层组件(谨慎修改)<br>
 
-* Helper
+* Helper<br>
 辅助类<br>
 
-* Manager
+* Manager<br>
 数据管理器<br>
 
-* Resource
+* Resource<br>
 资源文件夹<br>
 
-* Supporting File
+* Supporting File<br>
 plist、entitlements文件夹<br>
 
-* Vendors
+* Vendors<br>
 第三方控件<br>
 
-二、底层组件
+##二、底层组件
     DJViewController        //ViewController统一继承
     DJTableViewController   //TableViewController统一继承
     WebViewController       //Web统一入口
