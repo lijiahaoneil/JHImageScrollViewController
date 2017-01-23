@@ -2,33 +2,41 @@
 
 ##一、文件夹
 
-* Appdelegate存放Appdelegate文件，禁止添加其他文件。<br>
+* Appdelegate
+存放Appdelegate文件，禁止添加其他文件。
 
-* Base.Iproj存放系统storyboard，禁止添加其他文件。所有页面由代码生成，不使用storyboard开发。<br>
-`Category`<br>
-扩展，按照所属Object命名文件夹统一存放。<br>
-`Components`<br>
-模块组件，所有页面均存放在此处，按照功能命名文件夹统一存放。(风格尽量统一)<br>
-<pre><code>
-EXAMPLE:
-登录模块     
+* Base.Iproj
+存放系统storyboard，禁止添加其他文件。所有页面由代码生成，不使用storyboard开发。
+
+* Category
+扩展，按照所属Object命名文件夹统一存放。
+
+* Components
+模块组件，所有页面均存放在此处，按照功能命名文件夹统一存放。(风格尽量统一)
+<pre>EXAMPLE:登录模块 <code>
     -Cell&View      存放Cell、View
     -Controller     存放Controller
     -Model          存放模型
     -Request        存放请求
     -Reform         存放解析
 </code></pre>
-`Foundation`<br>
+
+* Foundation
 底层组件(谨慎修改)<br>
-`Helper`<br>
+
+* Helper
 辅助类<br>
-`Manager`<br>
+
+* Manager
 数据管理器<br>
-`Resource`<br>
+
+* Resource
 资源文件夹<br>
-`Supporting File`<br>
+
+* Supporting File
 plist、entitlements文件夹<br>
-`Vendors`<br>
+
+* Vendors
 第三方控件<br>
 
 二、底层组件
