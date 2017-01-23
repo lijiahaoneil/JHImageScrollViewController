@@ -1,10 +1,8 @@
 #打个借条开发文档
 
 ##一、文件夹
-`Appdelegate`<br>
-存放Appdelegate文件，禁止添加其他文件。<br>
-`Base.Iproj`<br>
-存放系统storyboard，禁止添加其他文件。所有页面由代码生成，不使用storyboard开发。<br>
++`Appdelegate` 存放Appdelegate文件，禁止添加其他文件。<br>
++`Base.Iproj`存放系统storyboard，禁止添加其他文件。所有页面由代码生成，不使用storyboard开发。<br>
 `Category`<br>
 扩展，按照所属Object命名文件夹统一存放。<br>
 `Components`<br>
@@ -25,11 +23,11 @@ EXAMPLE:
 `Manager`<br>
 数据管理器<br>
 `Resource`<br>
-资源文件夹
-`Supporting File`
-plist、entitlements文件夹
-`Vendors`
-第三方控件
+资源文件夹<br>
+`Supporting File`<br>
+plist、entitlements文件夹<br>
+`Vendors`<br>
+第三方控件<br>
 
 二、底层组件
     DJViewController        //ViewController统一继承
