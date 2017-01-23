@@ -48,18 +48,18 @@ plist、entitlements文件夹<br>
 ###1、常量命名：
 ####宏定义
 #####作用域+功能
-<pre><code>#define DJTableView_HeaderHeight 12   //通用Header高度
+<pre><code>#define DJTableView_HeaderHeight 12                      //通用Header高度
 </code></pre>
 ####类型常量
 #####处于编译单元内使用的常量 k+作用域+功能
-<pre><code>static const CGFloat kTableViewHeaderHeight //Header高度
+<pre><code>static const CGFloat kTableViewHeaderHeight              //Header高度
 </code></pre>
 #####可外部使用的常量 所属模块+作用域+功能
 <pre><code>HJLoginViewController.h
     extern const CGFloat HJLoginViewControllerTableViewHeaderHeight //Header高度
 </code></pre>
 <pre><code>HJLoginViewController.m
-    const CGFloat HJLoginViewControllerTableViewHeaderHeight //Header高度
+    const CGFloat HJLoginViewControllerTableViewHeaderHeight        //Header高度
 </code></pre>
 ###2、枚举
 定义typedef NS_ENUM 或 typedef NS_OPTIONS宏。服务端数据做映射匹配，或者特殊（字符串比对）匹配。
