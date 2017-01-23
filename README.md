@@ -1,8 +1,8 @@
 #打个借条开发文档
 
 ##一、文件夹
-+`Appdelegate` 存放Appdelegate文件，禁止添加其他文件。<br>
-+`Base.Iproj`存放系统storyboard，禁止添加其他文件。所有页面由代码生成，不使用storyboard开发。<br>
++Appdelegate+存放Appdelegate文件，禁止添加其他文件。<br>
++Base.Iproj+存放系统storyboard，禁止添加其他文件。所有页面由代码生成，不使用storyboard开发。<br>
 `Category`<br>
 扩展，按照所属Object命名文件夹统一存放。<br>
 `Components`<br>
